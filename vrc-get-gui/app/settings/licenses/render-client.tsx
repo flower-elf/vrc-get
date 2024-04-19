@@ -1,7 +1,7 @@
 "use client";
 
-import {Card, Typography} from "@material-tailwind/react";
-import Link from "next/link";
+import {Typography} from "@material-tailwind/react";
+import Card from "@/components/Card";
 import {Licenses} from "@/lib/licenses";
 import {shellOpen} from "@/lib/shellOpen";
 

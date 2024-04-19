@@ -1,6 +1,7 @@
 "use client";
 
-import {Card, Typography} from "@material-tailwind/react";
+import {Typography} from "@material-tailwind/react";
+import Card from "@/components/Card";
 import {HNavBar, VStack} from "@/components/layout";
 import React, {useEffect} from "react";
 import {LogEntry, utilGetLogEntries} from "@/lib/bindings";
@@ -46,7 +47,8 @@ export default function Page() {
 				</Typography>
 			</HNavBar>
 			<main className="flex-shrink overflow-hidden flex flex-grow">
-				<Card className={`w-full overflow-x-auto overflow-y-scroll p-2 whitespace-pre ${notoSansMono.className} shadow-none`}>
+				<Card
+					className={`w-full overflow-x-auto overflow-y-scroll p-2 whitespace-pre ${notoSansMono.className} shadow-none`}>
 					{logEntries.map((entry) => logEntryToText(entry)).join("\n")}
 				</Card>
 			</main>

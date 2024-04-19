@@ -1,6 +1,7 @@
 "use client";
 
-import {Card, List, ListItem, ListItemPrefix} from "@material-tailwind/react";
+import {List, ListItem, ListItemPrefix} from "@material-tailwind/react";
+import Card from "@/components/Card";
 import {CloudIcon, Cog6ToothIcon, ListBulletIcon} from "@heroicons/react/24/solid";
 import React from "react";
 import {Bars4Icon} from "@heroicons/react/24/outline";
@@ -35,7 +36,7 @@ export function SideBar({className}: { className?: string }) {
 
 	return (
 		<Card
-			className={`${className} w-auto max-w-[20rem] p-2 shadow-xl shadow-blue-gray-900/5 ml-4 my-4 shrink-0`}>
+			className={`${className} w-auto max-w-[20rem] p-2 ml-4 my-4 shrink-0`}>
 			<List className="min-w-[10rem] flex-grow">
 				<SideBarItem href={"/projects"} text={t("projects")} icon={ListBulletIcon}/>
 				<SideBarItem href={"/settings"} text={t("settings")} icon={Cog6ToothIcon}/>

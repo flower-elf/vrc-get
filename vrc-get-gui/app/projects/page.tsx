@@ -3,7 +3,6 @@
 import {
 	Button,
 	ButtonGroup,
-	Card,
 	Checkbox,
 	Dialog,
 	DialogBody,
@@ -19,6 +18,7 @@ import {
 	Tooltip,
 	Typography
 } from "@material-tailwind/react";
+import Card from "@/components/Card";
 import React, {forwardRef, Fragment, useEffect, useMemo, useState} from "react";
 import {
 	ArrowPathIcon,
@@ -101,7 +101,7 @@ export default function Page() {
 												 isLoading={loading}
 												 search={search} setSearch={setSearch}/>
 			<main className="flex-shrink overflow-hidden flex">
-				<Card className="w-full overflow-x-auto overflow-y-auto shadow-none">
+				<Card className="w-full overflow-x-auto overflow-y-auto">
 					{
 						result.status == "pending" ? <Card className={"p-4"}>{tc("loading...")}</Card> :
 							result.status == "error" ?

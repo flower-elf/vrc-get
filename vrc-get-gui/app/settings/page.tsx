@@ -1,6 +1,7 @@
 "use client"
 
-import {Button, Card, Checkbox, Input, Typography} from "@material-tailwind/react";
+import {Button, Checkbox, Input, Typography} from "@material-tailwind/react";
+import Card from "@/components/Card";
 import Link from "next/link";
 import {useQuery} from "@tanstack/react-query";
 import {

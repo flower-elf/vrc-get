@@ -2,7 +2,6 @@
 
 import {
 	Button,
-	Card,
 	Checkbox,
 	Dialog,
 	DialogBody,
@@ -10,11 +9,10 @@ import {
 	DialogHeader,
 	IconButton,
 	Input,
-	List,
-	ListItem,
 	Tooltip,
 	Typography
 } from "@material-tailwind/react";
+import Card from "@/components/Card";
 import {useQuery} from "@tanstack/react-query";
 import {
 	environmentAddRepository,

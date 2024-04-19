@@ -3,7 +3,6 @@
 import {
 	Button,
 	ButtonGroup,
-	Card,
 	Checkbox,
 	Dialog,
 	DialogBody,
@@ -20,6 +19,7 @@ import {
 	Tooltip,
 	Typography
 } from "@material-tailwind/react";
+import Card from "@/components/Card";
 import React, {Fragment, memo, Suspense, useCallback, useMemo, useState} from "react";
 import {ArrowLeftIcon, ArrowPathIcon, ChevronDownIcon, EllipsisHorizontalIcon,} from "@heroicons/react/24/solid";
 import {ArrowUpCircleIcon, MinusCircleIcon, PlusCircleIcon,} from "@heroicons/react/24/outline";
